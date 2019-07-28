@@ -16,7 +16,7 @@ function Home() {
                 <div className="row">
                     <div className="col-md-4 col-xl-4 col-sm-12 d-flex justify-content-center">
                         <div className="card border-0 " style={{ width: "300px" }}>
-                            <img src="http://sclance.com/pngs/drawing-png/drawing_png_418307.jpg" alt="" className="card-img-top" />
+                            <img src="https://i.ya-webdesign.com/images/anima-drawing-wing-5.png" alt="" className="card-img-top" />
                             <div className="card-body text-center">
                                 <h3 className="text-center mx-auto">Post</h3>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint provident dolores sunt doloribus, ex natus! Architecto omnis unde eos cumque.</p>
