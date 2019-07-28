@@ -1,11 +1,11 @@
 {
     "root": "build/",
-    "routes" : {
-        "/**": "index.html"
+    "routes": {
+      "/**": "index.html"
     },
-    "proxies" : {
-        "/" : {
-            "origin": "https/mango-mern-server.herokuapp.com"
-        }
+    "proxies": {
+      "/api": {
+        "origin": "https://mango-mern-server.herokuapp.com/api"
+      }
     }
-}
+  }
