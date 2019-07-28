@@ -21,7 +21,6 @@ function Home() {
                                 <h3 className="text-center mx-auto">Post</h3>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint provident dolores sunt doloribus, ex natus! Architecto omnis unde eos cumque.</p>
                             </div>
-
                         </div>
 
                     </div>
