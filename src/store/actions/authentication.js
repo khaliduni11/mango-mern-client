@@ -78,7 +78,7 @@ export const resend = email => dispatch => {
 export const changePassword = passwords => (dispatch, getState) => {
     const {authentication} = getState();
     const userId = authentication.user.id
-    return axios.put(`/user/auth/${userId}/change_password`, passwords)
+    return axios.put(`/mango/user/auth/${userId}/change_password`, passwords)
     .then(res => {
         dispatch({
             type: CHANGE_PASSWORD,

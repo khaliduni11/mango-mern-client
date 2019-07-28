@@ -24,7 +24,6 @@ export const addPost = inputData => (dispatch, getState) => {
     const userId = authentication.user.id;
     return axios.post(`/mango/post/${userId}/post`, inputData)
     .then(res => {
-        console.log()
         dispatch({
             type: ADD_POST,
             payload: res.data.foundPost
