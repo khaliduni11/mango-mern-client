@@ -17,7 +17,7 @@ export const logOut = () => dispatch => {
 }
 
 export const signin = userData => dispatch => {
-    return axios.post("/user/auth/signin", userData)
+    return axios.post("/mango/user/auth/signin", userData)
     .then(res => {
         const {token}  = res.data;
         localStorage.setItem("jwtToken", token);
@@ -34,7 +34,7 @@ export const signin = userData => dispatch => {
 }
 
 export const signup = userData => dispatch => {
-    return axios.post("/user/auth/signup", userData)
+    return axios.post("/mango/user/auth/signup", userData)
     .then(res => {
         console.log(res)
     })
@@ -48,7 +48,7 @@ export const signup = userData => dispatch => {
 
 
 export const verify = (userId, randomNumber) => dispatch => {
-    return axios.put(`/user/auth/${userId}/${randomNumber}/verify`)
+    return axios.put(`/mango/user/auth/${userId}/${randomNumber}/verify`)
     .then(res => {
         const {token}  = res.data;
         localStorage.setItem("jwtToken", token);
@@ -65,7 +65,7 @@ export const verify = (userId, randomNumber) => dispatch => {
 }
 
 export const resend = email => dispatch => {
-    return axios.post(`/user/auth/resend`, email)
+    return axios.post(`/mango/user/auth/resend`, email)
     .then(res => {})
     .catch(err => {
         dispatch({
@@ -94,7 +94,7 @@ export const changePassword = passwords => (dispatch, getState) => {
 }
 
 export const forgetPassword = email => dispatch => {
-    return axios.put("/user/auth//forget_password", email)
+    return axios.put("/mango/user/auth//forget_password", email)
     .then(res => {
         dispatch({
             type: FORGET_PASSWORD,
@@ -110,7 +110,7 @@ export const forgetPassword = email => dispatch => {
 }
 
 export const changeForgotPassword = (password, userId, randomNumber) => dispatch =>  {
-    return axios.put(`/user/auth/forgot_password/${userId}/${randomNumber}`, password)
+    return axios.put(`/mango/user/auth/forgot_password/${userId}/${randomNumber}`, password)
     .then(res => {
         const {token}  = res.data;
         localStorage.setItem("jwtToken", token);

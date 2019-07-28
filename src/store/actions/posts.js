@@ -22,7 +22,7 @@ export const getPosts = () => (dispatch, getState) => {
 export const addPost = inputData => (dispatch, getState) => {
     const {authentication} = getState();
     const userId = authentication.user.id;
-    return axios.post(`/post/${userId}/post`, inputData)
+    return axios.post(`/mango/post/${userId}/post`, inputData)
     .then(res => {
         console.log()
         dispatch({
@@ -41,7 +41,7 @@ export const addPost = inputData => (dispatch, getState) => {
 export const updatePost = (inputData, post_id) => (dispatch, getState) => {
     const {authentication} = getState();
     const userId = authentication.user.id;
-    return axios.put(`/post/${userId}/${post_id}`, inputData)
+    return axios.put(`/mango/post/${userId}/${post_id}`, inputData)
     .then(res => {
         dispatch({
             type: UPDATE_POST,
@@ -60,7 +60,7 @@ export const updatePost = (inputData, post_id) => (dispatch, getState) => {
 export const deletePost = post_id => (dispatch, getState) => {
     const {authentication} = getState();
     const userId = authentication.user.id;
-    return axios.delete(`/post/${userId}/${post_id}`)
+    return axios.delete(`/mango/post/${userId}/${post_id}`)
     .then(res => {
         dispatch({
             type: DELETE_POST
