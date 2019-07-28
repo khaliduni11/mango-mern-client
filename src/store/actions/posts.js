@@ -4,7 +4,7 @@ import {GET_POSTS, UPDATE_POST, DELETE_POST, ADD_POST, GET_ERROR_POST} from "../
 export const getPosts = () => (dispatch, getState) => {
     const {authentication} = getState();
     const userId = authentication.user.id;
-    return axios.get(`/post/${userId}`)
+    return axios.get(`/mango/post/${userId}`)
     .then(res => {
         dispatch({
             type: GET_POSTS,
