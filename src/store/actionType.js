@@ -1,0 +1,10 @@
+export const ADD_POST = "ADD_POST";
+export const UPDATE_POST = "UPDATE_POST";
+export const GET_POSTS = "GET_POSTS";
+export const DELETE_POST = "DELETE_POST";
+export const GET_ERROR_POST = "GET_ERROR_POST";
+
+export const CURRENT_USER = "CURRENT_USER";
+export const CHANGE_PASSWORD = "CHANGE_PASSWORD"
+export const GET_AUTHENTICATION_ERROR = "GET_AUTHENTICATION_ERROR";
+export const FORGET_PASSWORD = "FORGET_PASSWORD"
