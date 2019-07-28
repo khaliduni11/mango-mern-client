@@ -12,7 +12,7 @@ function NavbarBottom() {
         <nav id="navbarBottom" className="navbar
          navbar-expand-md navbar-light">
              <div className="container">
-             <Link className="navbar-brand" to="/"><img src="http://pngimg.com/uploads/mango/mango_PNG9163.png" style={{width: '50px'}} alt=""/></Link>
+             <Link className="navbar-brand" to="/"><img src="https://www.freepngimg.com/thumb/mango/1-2-mango-png.png" style={{width: '50px'}} alt=""/></Link>
              <button className="navbar-toggler ml-auto" data-target="#navbarCollapse" data-toggle="collapse">
                  <i className="navbar-toggler-icon"></i>
              </button>
