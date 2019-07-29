@@ -5,7 +5,7 @@
     },
     "proxies": {
       "/mango": {
-        "origin": "https://mango-mern-mean-server.herokuapp.com"
+        "origin": "https://mango-mern-mean-server.herokuapp.com/mango"
       }
     }
   }
